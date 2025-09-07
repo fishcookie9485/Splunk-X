@@ -9,8 +9,8 @@ keep_alive()
 # Get the bot token from environment variable
 TOKEN = os.getenv("DISCORD_TOKEN")
 
-SOURCE_CHANNEL_ID = 1399891851330326531  # first channel where you get your hits
-TARGET_CHANNEL_ID = 1406182578506956810  # second channel
+SOURCE_CHANNEL_ID = 1414236802876968985  # Source channel
+TARGET_CHANNEL_ID = 1414237079013163091  # Target channel
 PREFIX = "."  # Command prefix
 
 intents = discord.Intents.default()
@@ -121,3 +121,4 @@ async def on_message(message):
         await message.channel.send("No embeds found in recent messages.")
 
 bot.run(TOKEN)
+
