@@ -82,10 +82,9 @@ def clean_embed(embed: discord.Embed) -> discord.Embed:
             values = [v.strip() for v in value_clean.split("\n") if v.strip()]
             new_values = []
             emojis = [
-                "<:HeadlessHorseman:1406248100099653642>",
-                "<:korblox:1406248202293870742>",
-                "<:verifiedhat:1406248282430111855>"
-                "<a:card:1410167178610606100>"
+                "<:HeadlessHorseman:1414237486179418163>",
+                "<:korblox:1414237555880104066>",
+                "<:verifiedhat:1414237442147352738>"
             ]
             for i, val in enumerate(values[:3]):  # Only process first 3 lines
                 new_values.append(f"{emojis[i]} {val}")
@@ -130,6 +129,7 @@ async def on_message(message):
         await message.channel.send("No embeds found in recent messages.")
 
 bot.run(TOKEN)
+
 
 
 
